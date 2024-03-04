@@ -32,6 +32,22 @@ dependencies {
   developmentOnly("org.springframework.boot:spring-boot-devtools")
   annotationProcessor("org.projectlombok:lombok")
   testImplementation("org.springframework.boot:spring-boot-starter-test")
+
+  // Ktor 설치
+  implementation("io.ktor:ktor-client-core:2.3.8")
+  implementation("io.ktor:ktor-client-okhttp:2.3.8")
+  implementation("io.ktor:ktor-client-cio:2.3.8")
+  implementation("org.springframework.boot:spring-boot-starter-webflux")
+
+  // Spring JPA
+  implementation("org.postgresql:postgresql:42.7.1")
+  implementation("org.springframework.boot:spring-boot-starter-data-jpa")
+
+  // Spring Security
+  implementation("org.springframework.boot:spring-boot-starter-security")
+  implementation("io.jsonwebtoken:jjwt-api:0.11.5")
+  implementation("io.jsonwebtoken:jjwt-impl:0.11.5")
+  implementation("io.jsonwebtoken:jjwt-jackson:0.11.5")
 }
 
 tasks.withType<KotlinCompile> {

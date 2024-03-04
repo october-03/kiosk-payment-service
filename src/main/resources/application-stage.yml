@@ -1,0 +1,9 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://database:5432/coupon
+    username: october03
+    password: 1q2w3e4r!@
+    driver-class-name: org.postgresql.Driver
+
+api:
+  base-url: http://gateway:8080
